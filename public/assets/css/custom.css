@@ -21,10 +21,10 @@ html {
 .container-custom {
     margin-bottom: 100px;
 }
-.product-item-custom {
+.product-item-custom  {
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .product-item-custom h5 {
     text-transform: uppercase;
@@ -41,4 +41,31 @@ html {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.block-small-custom{
+    width: 25rem;
+    margin: 0 auto;
+}
+
+.product-index {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.form-check {
+    background-color: #f4f8ff;
+    padding: 20px 65px;
+    margin-top: 7px;
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+.order-summary {
+    background-color: #f4f8ff;
+    padding: 20px;
+    margin-top: 22px;
 }

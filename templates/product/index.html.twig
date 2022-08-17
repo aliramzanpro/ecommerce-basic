@@ -13,13 +13,14 @@
 
 <div class="row">
     {% for product in products %}
-        <div class="col-md-4">
-            <div class="product-item-custom">
+        <div class="col-md-4  product-index">
+            <div class="product-item-custom ">
                 <a href="{{ path('product', {slug: product.slug } ) }}"><img src="/uploads/{{ product.image }}"  alt="{{product.name}}" class="img-responsive" width="100%"/></a>
                 <h5>{{product.name}}</h5>
                 <span class="product-subtitle">{{product.subtitle}}</span>
                 <span class="product-price">{{ (product.price / 100)|number_format(2, ',', '.') }} € </span>
             </div>
+            <a  href="{{ path('add_to_cart',{'id': product.id} ) }}" class="btn btn-primary product-item-btn">Ajouter au panier</a>
         </div>
     {% endfor %}
 </div>

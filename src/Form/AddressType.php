@@ -62,7 +62,8 @@ class AddressType extends AbstractType
         ->add('country', CountryType::class, [
             'label' => 'Pays',
             'attr' => [
-                'placeholder' => 'Votre pays'
+                'placeholder' => 'Votre pays',
+                'class' => 'selectpicker countrypicker wrap p-2'
             ]
         ])
         ->add('phone', TelType::class, [
